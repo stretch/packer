@@ -1,0 +1,26 @@
+{
+  "builders": [
+    {
+      "type": "googlecompute",
+      "account_file": "google.json",
+      "project_id": "winged-precinct-95712",
+      "source_image": "centos-6-v20151104",
+      "image_name": "nomad",
+      "zone": "europe-west1-b",
+      "network": "stretch",
+      "ssh_username": "jon_anslow"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo yum update -y"
+      ]
+    },
+    {
+      "type": "shell",
+      "script": "scripts/install-nomad.sh"
+    }
+  ]
+}
