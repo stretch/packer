@@ -8,7 +8,11 @@
       "image_name": "nomad",
       "zone": "europe-west1-b",
       "network": "stretch",
-      "ssh_username": "jon_anslow"
+      "ssh_username": "buildbot",
+      "metadata":
+      {
+        "sshKeys": "test:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCZLqjjCU2EMi4ES2zsNPzzaxtWGs0Qket0iiNci/kQwalL+tOQU3jR5HmfiP1UrVOOIdqnC+LL4rsw01IHAdjaZGn16875A5ILq7+Po0CrjmrDVPXpWWqEqBkXtVMwSEZheoashW0Jgbv546CejlIyz0Vl9pZeKcf4swT/Mur0VDL3NW93neRYzoaKUyBhC6vpduXdrDsRFMqmYv34Al4U66mGMnycF/Dr27PLSheRaHZ1iOC75aGb1JenBNCBSt/4vmOtJNsMoe4MqvP7YbRNAzS1jGbuXLNckkIMFEUxp3rcVHLVZIw4g1MankE1mEHmBphPIMPVlb2YisHiwnj9 buildbot@stretch"
+      }
     }
   ],
   "provisioners": [
